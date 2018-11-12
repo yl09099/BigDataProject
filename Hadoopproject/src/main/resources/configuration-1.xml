@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>color</name>
+        <value>yellow</value>
+        <description>color</description>
+    </property>
+    <property>
+        <name>size</name>
+        <value>10</value>
+        <description>size</description>
+    </property>
+    <property>
+        <name>wight</name>
+        <value>heavy</value>
+        <!--添加了final属性后，后面添加资源不能覆盖属性-->
+        <final>true</final>
+        <description>wight</description>
+    </property>
+    <property>
+        <name>size-wight</name>
+        <!--通用类似er表达式形式获取上面的属性值-->
+        <value>${size},${wight}</value>
+        <description>Size and Wight</description>
+    </property>
+
+</configuration>
