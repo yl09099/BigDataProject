@@ -4,11 +4,16 @@ import java.io.*;
 
 public class DataArrayIO {
 
-    public static void main(String[] args) throws UnsupportedEncodingException {
-        byte[]  returnArr = testByteInputStream(new File("C:\\Users\\Administrator\\Desktop\\1.csv"));
-        System.out.println(returnArr.length);
-        String srtString = new String(returnArr,"gbk");
-        System.out.println(srtString);
+    public static void main(String[] args) throws IOException {
+        //byte[]  returnArr = testByteInputStream(new File("C:\\Users\\Administrator\\Desktop\\1.csv"));
+        BufferedReader br = new BufferedReader(new FileReader(new File("C:\\Users\\Administrator\\Desktop\\1.csv")));
+        int i =1;
+        String stingLine= null;
+        while((stingLine=br.readLine())!=null){
+            System.out.println(stingLine);
+            i++;
+        }
+        br.close();
     }
 
     public static byte[] testByteInputStream(File file) {

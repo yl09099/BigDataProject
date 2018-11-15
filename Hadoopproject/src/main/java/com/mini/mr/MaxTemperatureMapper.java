@@ -3,19 +3,26 @@ package com.mini.mr;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapred.MapReduceBase;
-import org.apache.hadoop.mapred.Mapper;
-import org.apache.hadoop.mapred.OutputCollector;
-import org.apache.hadoop.mapred.Reporter;
+import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class MaxTemperatureMapper extends MapReduceBase implements Mapper<LongWritable, Text,Text, IntWritable> {
 
-    public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
-        String line = value.toString();
-        String year = line.substring(15,19);
-        int airTemperature = Integer.parseInt(line.substring(87,92));
-        output.collect(new Text(year),new IntWritable(airTemperature));
+public class MaxTemperatureMapper extends Mapper<IntWritable, Text, Text, IntWritable> {
+    private NcdcRecordParser ncdcRecordParser = new NcdcRecordParser();
+
+    @Override
+    protected void map(IntWritable key, Text value, Context context) throws IOException, InterruptedException {
+        ncdcRecordParser.parse(value);
+        if(ncdcRecordParser.isValidTemperature()){
+            context.write(new Text(ncdcRecordParser.getYear()),new IntWritable(ncdcRecordParser.getAritemperature()));
+        }
     }
+
+    /* public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
+        ncdcRecordParser.parse(value);
+        if (ncdcRecordParser.isValidTemperature()) {
+            output.collect(new Text(ncdcRecordParser.getYear()), new IntWritable(ncdcRecordParser.getAritemperature()));
+        }
+    }*/
 }

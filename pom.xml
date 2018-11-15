@@ -12,6 +12,7 @@
     <module>Hadoopproject</module>
     <module>IOproject</module>
     <module>Threadproject</module>
+      <module>Collectionproject</module>
   </modules>
 
   <name>Maven</name>
