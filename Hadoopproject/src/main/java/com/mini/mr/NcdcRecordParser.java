@@ -1,6 +1,8 @@
 package com.mini.mr;
 import org.apache.hadoop.io.Text;
 
+import java.util.Hashtable;
+
 public class NcdcRecordParser {
     private static final int MISS_TEMPERATURE = 9999;
     private String year;

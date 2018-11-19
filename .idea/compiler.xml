@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <resourceExtensions />
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="Collectionproject" />
         <module name="Hadoopproject" />
         <module name="IOproject" />
         <module name="Threadproject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BigDataproject" target="1.5" />
+      <module name="Collectionproject" target="1.7" />
+      <module name="Hadoopproject" target="1.7" />
+      <module name="IOproject" target="1.7" />
+      <module name="Threadproject" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
