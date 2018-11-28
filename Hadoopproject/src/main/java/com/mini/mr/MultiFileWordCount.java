@@ -116,6 +116,7 @@ public class MultiFileWordCount extends Configured implements Tool {
 
     public static class CombineFileLineRecordReader extends RecordReader<WordOffset, Text> {
 
+        //定义开始位置
         private long startOffset;
         private long end;
         private long pos;
