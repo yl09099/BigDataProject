@@ -13,6 +13,8 @@
     <module>IOproject</module>
     <module>Threadproject</module>
       <module>Collectionproject</module>
+    <module>untitled</module>
+    <module>Basicproject</module>
   </modules>
   <dependencies>
     <dependency>
