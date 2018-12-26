@@ -15,6 +15,7 @@
       <module>Collectionproject</module>
     <module>Basicproject</module>
     <module>WebService</module>
+      <module>Webproject</module>
   </modules>
   <dependencies>
     <dependency>

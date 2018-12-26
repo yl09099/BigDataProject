@@ -1,4 +1,4 @@
-package com.mini.dingding;
+package com.mini.model;
 
 /**
  * Created by xiaodou on 2018/12/2618:08.
