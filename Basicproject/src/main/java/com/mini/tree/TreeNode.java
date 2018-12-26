@@ -11,11 +11,11 @@ public class TreeNode {
     public TreeNode() {
     }
 
-    public TreeNode(int data){
-        this.data=data;
+    public TreeNode(int data) {
+        this.data = data;
     }
 
-    public Integer getData() {
+    public int getData() {
         return data;
     }
 
@@ -27,7 +27,7 @@ public class TreeNode {
         return rightNode;
     }
 
-    public void setData(Integer data) {
+    public void setData(int data) {
         this.data = data;
     }
 
