@@ -3,7 +3,6 @@ package com.mini.model;
 /**
  * Created by xiaodou on 2018/12/2618:08.
  */
-
 public class DingOragtion {
     private String id;
     private String createDeptGroup;
