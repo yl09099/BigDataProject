@@ -4,11 +4,15 @@ package com.mini.tree;
  * 构建二叉树节点
  */
 public class TreeNode {
-    private Integer data;
+    private int data;
     private TreeNode leftNode;
     private TreeNode rightNode;
 
     public TreeNode() {
+    }
+
+    public TreeNode(int data){
+        this.data=data;
     }
 
     public Integer getData() {
