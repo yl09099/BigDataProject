@@ -11,13 +11,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Basicproject" />
-        <module name="Collectionproject" />
-        <module name="Hadoopproject" />
-        <module name="IOproject" />
-        <module name="Threadproject" />
         <module name="untitled" />
-        <module name="WebService" />
+        <module name="Webproject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +23,7 @@
       <module name="IOproject" target="1.7" />
       <module name="Threadproject" target="1.7" />
       <module name="untitled" target="1.7" />
+      <module name="Webproject" target="1.7" />
       <module name="WebService" target="1.5" />
     </bytecodeTargetLevel>
   </component>

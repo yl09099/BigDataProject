@@ -4,6 +4,9 @@
     <entry_points version="2.0" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Webproject" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -12,6 +15,11 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Basicproject/pom.xml" />
+        <option value="$PROJECT_DIR$/Collectionproject/pom.xml" />
+        <option value="$PROJECT_DIR$/Hadoopproject/pom.xml" />
+        <option value="$PROJECT_DIR$/IOproject/pom.xml" />
+        <option value="$PROJECT_DIR$/Threadproject/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
