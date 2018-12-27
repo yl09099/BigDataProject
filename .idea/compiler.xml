@@ -2,6 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
@@ -11,7 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="untitled" />
+        <module name="Basicproject" />
+        <module name="Collectionproject" />
+        <module name="Hadoopproject" />
+        <module name="IOproject" />
+        <module name="Threadproject" />
         <module name="Webproject" />
       </profile>
     </annotationProcessing>
@@ -22,9 +37,7 @@
       <module name="Hadoopproject" target="1.7" />
       <module name="IOproject" target="1.7" />
       <module name="Threadproject" target="1.7" />
-      <module name="untitled" target="1.7" />
       <module name="Webproject" target="1.7" />
-      <module name="WebService" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
